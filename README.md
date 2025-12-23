@@ -71,6 +71,23 @@ Derived Tables
 
 ### ETL Workflow (n8n)
 
+1. Monitors a Gmail inbox for incoming sales emails using a trigger-based workflow
+2. Validates incoming attachments to ensure only CSV files are processed
+3. Generates a unique hash for each file to prevent duplicate ingestion 
+4. Checks file hash against PostgreSQL to detect already processed files 
+5. Filters out duplicate files using conditional branching logic 
+6. Stores new file hashes in the database for idempotent processing 
+7. Merges and cleans incoming JSON data for consistent downstream handling
+8. Uses rule-based switching to route aggregate vs line-level datasets
+9. Extracts order aggregate & order line CSV attachments (India & USA)
+10. Convert CSV → JSON
+11. Load data into PostgreSQL tables
+12. Support incremental daily loads
+
+<p align="center">
+    <img src='https://github.com/saarthakgarg/RevenueInsights-HospitalityDomain/blob/main/resources/Revenue%20Dashboard.png' width="600">
+</p>
+
 ### Analytics & KPIs
 
 The following supply chain KPIs are calculated and validated:
