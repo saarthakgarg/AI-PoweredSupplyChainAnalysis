@@ -11,18 +11,46 @@ The project is inspired by a real business scenario involving an FMCG company ex
 Atlart (Atlique Mart) is a Gujarat-based organic food manufacturer that has successfully expanded its operations from India to the USA. Despite handling a limited product portfolio, the company is facing customer dissatisfaction due to poor order fulfillment and immature supply chain processes.
 
 As operations scale across geographies, Atlart lacks: <br>
-Clear visibility into order and delivery performance<br>
-Reliable inventory and fulfillment metrics<br>
-A scalable, automated analytics system<br>
+- Clear visibility into order and delivery performance<br>
+- Reliable inventory and fulfillment metrics<br>
+- A scalable, automated analytics system<br>
 
 Traditional reporting approaches using Excel or BI tools are slow, manual, and insufficient for leadership’s need for real-time, AI-powered insights.
 
 Leadership wants an AI-powered, scalable analytics solution that can:
 
-Automatically ingest daily sales data<br>
-Centralize data across geographies<br>
-Calculate critical supply chain KPIs<br>
-Answer business questions using natural-language prompts<br>
+- Automatically ingest daily sales data<br>
+- Centralize data across geographies<br>
+- Calculate critical supply chain KPIs<br>
+- Answer business questions using natural-language prompts<br>
+
+### Project Objectives
+
+- Automate CSV ingestion from emails<br>
+- Build a cloud-based analytics database<br>
+- Enable AI-assisted data cleaning and modeling<br>
+- Compute core supply chain performance metrics<br>
+- Provide fast, prompt-based business insights<br>
+
+### Architecture Overview
+
+Email → n8n → PostgreSQL (Supabase) → Quadratic (AI Spreadsheet)
+
+1. Daily sales CSV files are received via email
+2. n8n monitors inbox and extracts attachments
+3. Data is transformed and loaded into PostgreSQL
+4. Quadratic connects directly to the database
+5. Analytics and KPIs are generated using AI prompts
+
+### Tech Stack
+
+Layer	    Tools<br>
+Automation	n8n<br>
+Database	PostgreSQL (Supabase)<br>
+Analytics	Quadratic (AI Spreadsheet)<br>
+Languages	Python (Pandas), SQL<br>
+Data Format	CSV, JSON<br>
+APIs	    OpenExchangeRates (USD ↔ INR)<br>
 
 ### Task List
 
