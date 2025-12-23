@@ -10,19 +10,19 @@ The project is inspired by a real business scenario involving an FMCG company ex
 
 Atlart (Atlique Mart) is a Gujarat-based organic food manufacturer that has successfully expanded its operations from India to the USA. Despite handling a limited product portfolio, the company is facing customer dissatisfaction due to poor order fulfillment and immature supply chain processes.
 
-As operations scale across geographies, Atlart lacks:
-Clear visibility into order and delivery performance
-Reliable inventory and fulfillment metrics
-A scalable, automated analytics system
+As operations scale across geographies, Atlart lacks: <br>
+Clear visibility into order and delivery performance<br>
+Reliable inventory and fulfillment metrics<br>
+A scalable, automated analytics system<br>
 
 Traditional reporting approaches using Excel or BI tools are slow, manual, and insufficient for leadership’s need for real-time, AI-powered insights.
 
 Leadership wants an AI-powered, scalable analytics solution that can:
 
-Automatically ingest daily sales data
-Centralize data across geographies
-Calculate critical supply chain KPIs
-Answer business questions using natural-language prompts
+Automatically ingest daily sales data<br>
+Centralize data across geographies<br>
+Calculate critical supply chain KPIs<br>
+Answer business questions using natural-language prompts<br>
 
 ### Task List
 
