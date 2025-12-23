@@ -53,7 +53,7 @@ Email → n8n → PostgreSQL (Supabase) → Quadratic (AI Spreadsheet)
 | Data Format | CSV, JSON |
 | APIs | OpenExchangeRates (USD ↔ INR) |
 
-### 📊 Data Model
+### Data Model
 
 Fact Tables
 - fact_orders_aggregate – Order-level data
@@ -68,6 +68,23 @@ Dimension Tables
 Derived Tables
 - exchange_rates
 - fact_summary (denormalized analytics table)
+
+### ETL Workflow (n8n)
+
+### Analytics & KPIs
+
+The following supply chain KPIs are calculated and validated:
+
+- Total Orders
+- Total Order Lines
+- Line Fill Rate
+- Volume Fill Rate
+- On-Time Delivery %
+- In-Full Delivery %
+- OTIF (On-Time In-Full)
+- Customer Reliability Metrics
+  
+All KPI calculations are domain-validated, not blindly trusted from AI output.
 
 ## Revenue Dashboard - Overall Analysis View
 
